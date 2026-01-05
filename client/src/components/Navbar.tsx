@@ -35,7 +35,7 @@ export default function Navbar() {
             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </Button>
           
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          <a href="https://github.com/buildwithhanif/bahlilwind" target="_blank" rel="noreferrer">
             <Button className="brutalist-btn hidden sm:flex items-center gap-2">
               <Github className="h-5 w-5" />
               <span>STAR</span>
