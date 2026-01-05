@@ -25,13 +25,13 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-sm text-gray-500">
           <p className="flex items-center gap-2">
-            Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> by Manus AI
+            Developed by vibecoding.id
           </p>
           <div className="flex items-center gap-1">
             <span>Bahlil approved</span>
             <span className="text-green-500">✓</span>
           </div>
-          <p>© 2024 Bahlilwind. MIT License.</p>
+          <p>© 2026 Bahlilwind. MIT License.</p>
         </div>
       </div>
     </footer>
