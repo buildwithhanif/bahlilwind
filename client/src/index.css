@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "./styles/bahlilwind.css";
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -45,85 +45,74 @@
 }
 
 :root {
-  /* Neo-Brutalism Palette */
-  --color-electric-blue: #2563EB;
-  --color-warning-yellow: #FACC15;
-  --color-stark-white: #FFFFFF;
-  --color-thick-black: #000000;
-  --color-light-gray: #F3F4F6;
-
-  --primary: oklch(0.55 0.2 260); /* Electric Blue-ish */
-  --primary-foreground: oklch(1 0 0);
-  --sidebar-primary: oklch(0.55 0.2 260);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --chart-1: oklch(0.55 0.2 260);
-  --chart-2: oklch(0.85 0.18 85); /* Yellow-ish */
-  --chart-3: oklch(0.2 0 0);
-  --chart-4: oklch(0.6 0.15 250);
-  --chart-5: oklch(0.9 0.05 200);
-  
-  --radius: 0rem; /* Brutalist = No Radius by default, or sharp */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0 0 0);
-  --secondary: oklch(0.95 0.02 85); /* Light Yellow tint */
-  --secondary-foreground: oklch(0 0 0);
-  --muted: oklch(0.96 0 0);
-  --muted-foreground: oklch(0.4 0 0);
-  --accent: oklch(0.85 0.18 85); /* Warning Yellow */
-  --accent-foreground: oklch(0 0 0);
-  --destructive: oklch(0.6 0.2 20);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0 0 0); /* Black borders */
-  --input: oklch(1 0 0);
-  --ring: oklch(0 0 0);
-  --sidebar: oklch(1 0 0);
-  --sidebar-foreground: oklch(0 0 0);
-  --sidebar-accent: oklch(0.85 0.18 85);
-  --sidebar-accent-foreground: oklch(0 0 0);
-  --sidebar-border: oklch(0 0 0);
-  --sidebar-ring: oklch(0 0 0);
-
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.dark {
-  /* Neo-Brutalism Dark Mode - High Contrast */
-  --primary: oklch(0.6 0.2 260);
+  /* Modern SaaS Dark Mode Palette */
+  --primary: oklch(0.6 0.2 260); /* Electric Blue */
   --primary-foreground: oklch(1 0 0);
   --sidebar-primary: oklch(0.6 0.2 260);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --background: oklch(0.1 0 0); /* Very dark grey/black */
-  --foreground: oklch(1 0 0);
-  --card: oklch(0.15 0 0);
-  --card-foreground: oklch(1 0 0);
-  --popover: oklch(0.15 0 0);
-  --popover-foreground: oklch(1 0 0);
-  --secondary: oklch(0.2 0 0);
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.2 0 0);
-  --muted-foreground: oklch(0.7 0 0);
-  --accent: oklch(0.85 0.18 85); /* Keep yellow for accent */
-  --accent-foreground: oklch(0 0 0);
-  --destructive: oklch(0.6 0.2 20);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(1 0 0); /* White borders in dark mode */
-  --input: oklch(0.2 0 0);
-  --ring: oklch(1 0 0);
   --chart-1: oklch(0.6 0.2 260);
   --chart-2: oklch(0.85 0.18 85);
   --chart-3: oklch(0.2 0 0);
   --chart-4: oklch(0.6 0.15 250);
   --chart-5: oklch(0.9 0.05 200);
+  
+  --radius: 0.5rem;
+  --background: oklch(0.1 0 0); /* Zinc 950 */
+  --foreground: oklch(0.98 0 0); /* Zinc 50 */
+  --card: oklch(0.12 0 0); /* Zinc 900 */
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.12 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.2 0 0); /* Zinc 800 */
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.2 0 0);
+  --muted-foreground: oklch(0.65 0 0); /* Zinc 400 */
+  --accent: oklch(0.2 0 0);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.4 0.15 20);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.2 0 0); /* Zinc 800 */
+  --input: oklch(0.2 0 0);
+  --ring: oklch(0.6 0.2 260);
   --sidebar: oklch(0.1 0 0);
-  --sidebar-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.85 0.18 85);
-  --sidebar-accent-foreground: oklch(0 0 0);
-  --sidebar-border: oklch(1 0 0);
-  --sidebar-ring: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.2 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.2 0 0);
+  --sidebar-ring: oklch(0.6 0.2 260);
+
+  font-family: 'Inter', sans-serif;
+}
+
+.dark {
+  /* Same as root because we are Dark Mode First */
+  --primary: oklch(0.6 0.2 260);
+  --primary-foreground: oklch(1 0 0);
+  --sidebar-primary: oklch(0.6 0.2 260);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --background: oklch(0.1 0 0);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.12 0 0);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.12 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.2 0 0);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.2 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.2 0 0);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.4 0.15 20);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.2 0 0);
+  --input: oklch(0.2 0 0);
+  --ring: oklch(0.6 0.2 260);
+  --sidebar: oklch(0.1 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.2 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.2 0 0);
+  --sidebar-ring: oklch(0.6 0.2 260);
 }
 
 @layer base {
@@ -131,10 +120,9 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-mono;
+    @apply bg-background text-foreground font-sans antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', sans-serif;
     @apply font-bold tracking-tight;
   }
   button:not(:disabled),
@@ -149,39 +137,31 @@
     @apply cursor-pointer;
   }
   
-  /* Brutalist Utilities */
-  .brutalist-card {
-    @apply border-2 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none bg-white dark:bg-black;
+  /* Modern SaaS Utilities */
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
   }
   
-  .brutalist-btn {
-    @apply border-2 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none font-bold uppercase tracking-wider px-6 py-3 bg-primary text-white hover:bg-blue-700 transition-all;
+  .glow-text {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
   }
 
-  .brutalist-btn-secondary {
-    @apply border-2 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none font-bold uppercase tracking-wider px-6 py-3 bg-white dark:bg-black text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 transition-all;
+  .glow-border {
+    @apply relative;
+  }
+  
+  .glow-border::before {
+    content: '';
+    @apply absolute inset-0 -z-10 bg-gradient-to-r from-primary/50 to-purple-500/50 blur-xl opacity-50 rounded-lg;
   }
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -192,16 +172,16 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
 }
