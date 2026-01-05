@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun, Github } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
+import logoImage from "@/assets/logo.png";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -11,7 +12,7 @@ export default function Navbar() {
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative h-10 w-10 overflow-hidden border-2 border-black bg-primary group-hover:bahlil-goyang">
-            <img src={import.meta.env.BASE_URL + "images/logo.png"} alt="Bahlilwind Logo" className="h-full w-full object-cover" />
+            <img src={logoImage} alt="Bahlilwind Logo" className="h-full w-full object-cover" />
           </div>
           <span className="font-display text-2xl font-bold uppercase tracking-tighter italic">
             Bahlil<span className="text-primary">wind</span>
