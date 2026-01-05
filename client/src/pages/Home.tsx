@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import DemoGrid from "@/components/DemoGrid";
 import Features from "@/components/Features";
 import Installation from "@/components/Installation";
+import Docs from "@/components/Docs";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Features />
         <DemoGrid />
         <Installation />
+        <Docs />
       </main>
       <Footer />
     </div>
