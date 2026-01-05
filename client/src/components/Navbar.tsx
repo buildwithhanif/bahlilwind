@@ -20,9 +20,9 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8 font-mono font-bold">
-          <a href="#animations" className="hover:underline decoration-4 decoration-primary underline-offset-4">ANIMATIONS</a>
-          <a href="#installation" className="hover:underline decoration-4 decoration-primary underline-offset-4">INSTALL</a>
-          <a href="#docs" className="hover:underline decoration-4 decoration-primary underline-offset-4">DOCS</a>
+          <button onClick={() => document.getElementById('animations')?.scrollIntoView({ behavior: 'smooth' })} className="hover:underline decoration-4 decoration-primary underline-offset-4 uppercase">ANIMATIONS</button>
+          <button onClick={() => document.getElementById('installation')?.scrollIntoView({ behavior: 'smooth' })} className="hover:underline decoration-4 decoration-primary underline-offset-4 uppercase">INSTALL</button>
+          <button onClick={() => document.getElementById('docs')?.scrollIntoView({ behavior: 'smooth' })} className="hover:underline decoration-4 decoration-primary underline-offset-4 uppercase">DOCS</button>
         </div>
 
         <div className="flex items-center gap-4">
