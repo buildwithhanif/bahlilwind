@@ -7,27 +7,10 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
 
-import { useLocation } from "wouter";
-
 function Router() {
-  // Wouter doesn't natively support base path, so we need to handle it manually
-  // or use a custom hook, but for simple deployment, we can just add the base path to routes
-  // or rely on the fact that GitHub Pages serves from subdirectory.
-  
-  // However, wouter's default router uses location.pathname which includes the base path.
-  // We need to configure the router to ignore the base path or match against it.
-  
-  // A simpler approach for GitHub Pages with wouter is to use a base path in the Router component if available,
-  // but wouter v3 doesn't have a 'base' prop on Router.
-  
-  // Let's try matching the base path explicitly.
-  const base = "/bahlilwind";
-  
   return (
     <Switch>
-      <Route path={base + "/"} component={Home} />
-      <Route path={"/"} component={Home} /> {/* Fallback for local dev */}
-      <Route path={base + "/404"} component={NotFound} />
+      <Route path={"/"} component={Home} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
